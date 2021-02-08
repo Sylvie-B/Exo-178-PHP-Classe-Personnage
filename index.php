@@ -5,15 +5,18 @@ include "classes/Personnage.php";
 // Creation d'une instance de la classe personnage
 $perso = new personnage();
 
-echo $perso->nom;
+$perso->setNom();
+
+
+echo $perso->getNom();
 
 echo"<br><br>";
 
 
 
 $perso2 = new personnage();
-$perso2->nom = "Robert";
-echo $perso2->nom;
+$perso2->setNom("Robert");
+echo $perso2->getNom();
 
 
 
